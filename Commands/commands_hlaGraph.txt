@@ -105,6 +105,14 @@ From /Net/birch/data/dilthey/MHC-PRG/tmp2/GS_nextGen/hla/derived:
 		../bin/MHC-PRG domode HLATypeInference --input_alignedReads round5_positiveANDnegative_25_separateOptim.fastQ.aligned --graphDir ../tmp2/GS_nextGen/hla &> HLAtypes_round5_positiveANDnegative_25_separateOptim.txt
 		
 	
+## simulate reads from real HLA haplotypes
+
+
+	../bin/MHC-PRG domode simulateHLAreads --graphDir ../tmp2/GS_nextGen/hla --outputDirectory ../tmp/hla/simulations/error1_perturb0 --readError 1 --perturbHaplotypes 0
+	
+	
+
+
 ../bin/MHC-PRG domode describekMerGraph ../tmp2/GS_nextGen/hla/graph.txt.kmers_31 ../tmp2/GS_nextGen/hla/derived/ HLAGRAPH_31 --output_kMer_levels --referenceGenomeCortexGraph ../tmp2/GS_nextGen/hla/derived/Homo_sapiens.GRCh37.60.dna.chromosome.ALL.blockedHLAgraph.ctx
 
 ## this does not work, for there is no PGF protection
