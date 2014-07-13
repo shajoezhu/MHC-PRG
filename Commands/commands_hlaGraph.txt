@@ -118,7 +118,10 @@ From /Net/birch/data/dilthey/MHC-PRG/tmp2/GS_nextGen/hla/derived:
 	
 	./HLAtypeinference.pl --sampleIDs allSimulations --actions v --trueHLA ../tmp/hla/trueHLA_1_exon231_error1_perturb0
 
+	./HLAtypeinference.pl --sampleIDs I1_simulations_exon231_error1_perturb0_sample99 --actions w --trueHaplotypes ../tmp/hla/trueHaplotypes1_exon231_error1_perturb0
 
+	./HLAtypeinference.pl --sampleIDs I1_simulations_exon231_error1_perturb0_sample99 --actions i
+	
 
 ../bin/MHC-PRG domode describekMerGraph ../tmp2/GS_nextGen/hla/graph.txt.kmers_31 ../tmp2/GS_nextGen/hla/derived/ HLAGRAPH_31 --output_kMer_levels --referenceGenomeCortexGraph ../tmp2/GS_nextGen/hla/derived/Homo_sapiens.GRCh37.60.dna.chromosome.ALL.blockedHLAgraph.ctx
 
