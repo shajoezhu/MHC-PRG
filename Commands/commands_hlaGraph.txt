@@ -154,3 +154,8 @@ dilthey@sequoia:~/picard/picard-tools-1.83$ java -jar CollectInsertSizeMetrics.j
 
 
 ./HLAtypeinference.pl --sampleIDs AA02O9Q_A2 --actions v --trueHLA /home/dilthey/GSK_NG/GSK_NGclassicalHLA_withG.txt
+
+
+## negative alignment
+
+./HLAtypeinference.pl --action n --sampleIDs all_I1
