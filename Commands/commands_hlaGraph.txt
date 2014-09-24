@@ -108,7 +108,9 @@ From /Net/birch/data/dilthey/MHC-PRG/tmp2/GS_nextGen/hla/derived:
 ## simulate reads from real HLA haplotypes
 
 
-	../bin/MHC-PRG domode simulateHLAreads --nIndividuals 100 --graphDir ../tmp2/GS_nextGen/hla --outputDirectory ../tmp/hla/simulations/exon231_error1_perturb0 --readError 1 --perturbHaplotypes 0 --exon23 1
+	../bin/MHC-PRG domode simulateHLAreads --nIndividuals 10 --graphDir ../tmp2/GS_nextGen/hla --outputDirectory ../tmp/hla/simulations/exon231_error1_perturb0 --readError 1 --perturbHaplotypes 0 --exon23 1
+
+	../bin/MHC-PRG domode simulateHLAreads --nIndividuals 50 --graphDir ../tmp2/GS_nextGen/hla --outputDirectory ../tmp/hla/simulations/exon231_error1_perturb0_indivs50 --readError 1 --perturbHaplotypes 0 --exon23 1
 	
 	./HLAtypeinference_copySimulations.pl
 	
@@ -116,21 +118,16 @@ From /Net/birch/data/dilthey/MHC-PRG/tmp2/GS_nextGen/hla/derived:
 	
 	./HLAtypeinference.pl --sampleIDs allSimulations --actions pa
 	
-	./HLAtypeinference.pl --sampleIDs allSimulations --actions v --trueHLA ../tmp/hla/trueHLA_1_exon231_error1_perturb0
-
-	./HLAtypeinference.pl --sampleIDs I1_simulations_exon231_error1_perturb0_sample99 --actions v --trueHLA ../tmp/hla/trueHLA_1_exon231_error1_perturb0	
-	./HLAtypeinference.pl --sampleIDs I1_simulations_exon231_error1_perturb0_sample99 --actions w --trueHaplotypes ../tmp/hla/trueHaplotypes1_exon231_error1_perturb0
-
-	./HLAtypeinference.pl --sampleIDs I1_simulations_exon231_error1_perturb0_sample99 --actions i
-	
 	./HLAtypeinference.pl --sampleIDs allSimulations --actions i
 	
-	./HLAtypeinference.pl --sampleIDs I1_simulations_exon231_error1_perturb0_sample99 --actions v --trueHLA ../tmp/hla/trueHLA_1_exon231_error1_perturb0	
+	./HLAtypeinference.pl --sampleIDs allSimulations --actions v --trueHLA ../tmp/hla/trueHLA_1_exon231_error1_perturb0	
 	
 	
 	
 
 ../bin/MHC-PRG domode describekMerGraph ../tmp2/GS_nextGen/hla/graph.txt.kmers_31 ../tmp2/GS_nextGen/hla/derived/ HLAGRAPH_31 --output_kMer_levels --referenceGenomeCortexGraph ../tmp2/GS_nextGen/hla/derived/Homo_sapiens.GRCh37.60.dna.chromosome.ALL.blockedHLAgraph.ctx
+../bin/MHC-PRG domode describekMerGraph ../tmp2/GS_nextGen/hla/graph.txt.kmers_25 ../tmp2/GS_nextGen/hla/derived/ HLAGRAPH_25 --output_kMer_levels --referenceGenomeCortexGraph ../tmp2/GS_nextGen/hla/derived/Homo_sapiens.GRCh37.60.dna.chromosome.ALL.blockedHLAgraph_k25.ctx
+
 
 ## this does not work, for there is no PGF protection
 
@@ -159,3 +156,58 @@ dilthey@sequoia:~/picard/picard-tools-1.83$ java -jar CollectInsertSizeMetrics.j
 ## negative alignment
 
 ./HLAtypeinference.pl --action n --sampleIDs all_I1
+
+# All GSK samples:
+
+./HLAtypeinference.pl --sampleIDs all_I1 --actions i
+./HLAtypeinference.pl --sampleIDs all_I1 --actions v --trueHLA /home/dilthey/GSK_NG/GSK_NGclassicalHLA_withG.txt
+
+
+Without combination, T = 0
+
+	Comparisons: 120 -- OK: 103
+
+	PER-LOCUS SUMMARY:
+			A: 15 of 20,    Accuracy 0.75   Call rate: 1.00
+			B: 16 of 20,    Accuracy 0.80   Call rate: 1.00
+			C: 14 of 20,    Accuracy 0.70   Call rate: 1.00
+			DQA1: 20 of 20, Accuracy 1.00   Call rate: 1.00
+			DQB1: 20 of 20, Accuracy 1.00   Call rate: 1.00
+			DRB1: 18 of 20, Accuracy 0.90   Call rate: 1.00
+
+	T = 0.5
+	
+	Comparisons: 75 -- OK: 71
+
+	PER-LOCUS SUMMARY:
+			A: 5 of 5,      Accuracy 1.00   Call rate: 0.25
+			B: 7 of 9,      Accuracy 0.78   Call rate: 0.45
+			C: 4 of 4,      Accuracy 1.00   Call rate: 0.20
+			DQA1: 20 of 20, Accuracy 1.00   Call rate: 1.00
+			DQB1: 17 of 17, Accuracy 1.00   Call rate: 0.85
+			DRB1: 18 of 20, Accuracy 0.90   Call rate: 1.00
+
+With combination, T = 0
+
+	Comparisons: 120 -- OK: 96
+
+	PER-LOCUS SUMMARY:
+			A: 13 of 20,    Accuracy 0.65   Call rate: 1.00
+			B: 12 of 20,    Accuracy 0.60   Call rate: 1.00
+			C: 13 of 20,    Accuracy 0.65   Call rate: 1.00
+			DQA1: 20 of 20, Accuracy 1.00   Call rate: 1.00
+			DQB1: 20 of 20, Accuracy 1.00   Call rate: 1.00
+			DRB1: 18 of 20, Accuracy 0.90   Call rate: 1.00
+			
+	T = 0.5
+	
+	Comparisons: 73 -- OK: 68
+
+	PER-LOCUS SUMMARY:
+			A: 4 of 5,      Accuracy 0.80   Call rate: 0.25
+			B: 6 of 9,      Accuracy 0.67   Call rate: 0.45
+			C: 4 of 4,      Accuracy 1.00   Call rate: 0.20
+			DQA1: 20 of 20, Accuracy 1.00   Call rate: 1.00
+			DQB1: 18 of 18, Accuracy 1.00   Call rate: 0.90
+			DRB1: 16 of 17, Accuracy 0.94   Call rate: 0.85
+
