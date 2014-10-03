@@ -211,3 +211,56 @@ With combination, T = 0
 			DQB1: 18 of 18, Accuracy 1.00   Call rate: 0.90
 			DRB1: 16 of 17, Accuracy 0.94   Call rate: 0.85
 
+With mapping quality check, T = 0
+
+	Comparisons: 120 -- OK: 104
+
+	PER-LOCUS SUMMARY:
+			A: 16 of 20,    Accuracy 0.80   Call rate: 1.00
+			B: 15 of 20,    Accuracy 0.75   Call rate: 1.00
+			C: 14 of 20,    Accuracy 0.70   Call rate: 1.00
+			DQA1: 20 of 20, Accuracy 1.00   Call rate: 1.00
+			DQB1: 20 of 20, Accuracy 1.00   Call rate: 1.00
+			DRB1: 19 of 20, Accuracy 0.95   Call rate: 1.00
+
+	T = 0.5
+	
+	Comparisons: 64 -- OK: 63
+
+	PER-LOCUS SUMMARY:
+			A: 2 of 2,      Accuracy 1.00   Call rate: 0.10
+			B: 6 of 6,      Accuracy 1.00   Call rate: 0.30
+			C: 3 of 3,      Accuracy 1.00   Call rate: 0.15
+			DQA1: 20 of 20, Accuracy 1.00   Call rate: 1.00
+			DQB1: 15 of 15, Accuracy 1.00   Call rate: 0.75
+			DRB1: 17 of 18, Accuracy 0.94   Call rate: 0.90
+
+Just mapping quality check, strandedness and IS:
+	
+	T = 0
+	
+	Comparisons: 120 -- OK: 106
+
+	PER-LOCUS SUMMARY:
+			A: 14 of 20,    Accuracy 0.70   Call rate: 1.00
+			B: 15 of 20,    Accuracy 0.75   Call rate: 1.00
+			C: 17 of 20,    Accuracy 0.85   Call rate: 1.00
+			DQA1: 20 of 20, Accuracy 1.00   Call rate: 1.00
+			DQB1: 20 of 20, Accuracy 1.00   Call rate: 1.00
+			DRB1: 20 of 20, Accuracy 1.00   Call rate: 1.00
+			
+	T = 0.5
+	
+	Comparisons: 94 -- OK: 90
+
+	PER-LOCUS SUMMARY:
+			A: 9 of 12,     Accuracy 0.75   Call rate: 0.60
+			B: 13 of 14,    Accuracy 0.93   Call rate: 0.70
+			C: 9 of 9,      Accuracy 1.00   Call rate: 0.45
+			DQA1: 20 of 20, Accuracy 1.00   Call rate: 1.00
+			DQB1: 20 of 20, Accuracy 1.00   Call rate: 1.00
+			DRB1: 19 of 19, Accuracy 1.00   Call rate: 0.95
+
+
+
+
