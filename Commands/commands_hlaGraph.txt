@@ -262,5 +262,29 @@ Just mapping quality check, strandedness and IS:
 			DRB1: 19 of 19, Accuracy 1.00   Call rate: 0.95
 
 
+Per-position mapping quality: [0.9]
+
+	Comparisons: 60 -- OK: 55
+
+	PER-LOCUS SUMMARY:
+			A: 7 of 10,     Accuracy 0.70   Call rate: 1.00
+			B: 9 of 10,     Accuracy 0.90   Call rate: 1.00
+			C: 9 of 10,     Accuracy 0.90   Call rate: 1.00
+			DQA1: 10 of 10, Accuracy 1.00   Call rate: 1.00
+			DQB1: 10 of 10, Accuracy 1.00   Call rate: 1.00
+			DRB1: 10 of 10, Accuracy 1.00   Call rate: 1.00
 
 
+Per-position mapping quality: [0.7]
+
+Comparisons: 60 -- OK: 56
+
+PER-LOCUS SUMMARY:
+        A: 8 of 10,     Accuracy 0.80   Call rate: 1.00
+        B: 9 of 10,     Accuracy 0.90   Call rate: 1.00
+        C: 9 of 10,     Accuracy 0.90   Call rate: 1.00
+        DQA1: 10 of 10, Accuracy 1.00   Call rate: 1.00
+        DQB1: 10 of 10, Accuracy 1.00   Call rate: 1.00
+        DRB1: 10 of 10, Accuracy 1.00   Call rate: 1.00
+
+			
