@@ -286,5 +286,38 @@ PER-LOCUS SUMMARY:
         DQA1: 10 of 10, Accuracy 1.00   Call rate: 1.00
         DQB1: 10 of 10, Accuracy 1.00   Call rate: 1.00
         DRB1: 10 of 10, Accuracy 1.00   Call rate: 1.00
+		
+Per-position mapping quality: [0.7]
+
+Comparisons: 60 -- OK: 55
+
+PER-LOCUS SUMMARY:
+        A: 7 of 10,     Accuracy 0.70   Call rate: 1.00
+        B: 9 of 10,     Accuracy 0.90   Call rate: 1.00
+        C: 9 of 10,     Accuracy 0.90   Call rate: 1.00
+        DQA1: 10 of 10, Accuracy 1.00   Call rate: 1.00
+        DQB1: 10 of 10, Accuracy 1.00   Call rate: 1.00
+        DRB1: 10 of 10, Accuracy 1.00   Call rate: 1.00
+
+Correct vs incorrect coverages per locus:
+        A
+                Average 14.3936 / 15.2772 / 16.1608 vs 9.67534 / 13.1842933333333 / 20.144 [problems]
+                Low 10 / 10 / 10 vs 4 / 7 / 11 [problems]
+        B
+                Average 11.9858 / 13.52 / 15.0907 vs 10.4039 / 10.4039 /  [problems]
+                Low 5 / 7 / 10 vs 6 / 6 /  [problems]
+        C
+                Average 7.21897 / 11.5211175 / 13.4672 vs 12.2828 / 12.2828 /  [problems]
+                Low 4 / 7.25 / 9 vs 6 / 6 /  [problems]
+        DQA1
+                Average 35.1928 / 43.2 / 52.9558 vs  /  /  [problems]
+                Low 26 / 35 / 45 vs  /  /  [problems]
+        DQB1
+                Average 10.0519 / 15.00298 / 19.4 vs  /  /  [problems]
+                Low 7 / 11.6 / 16 vs  /  /  [problems]
+        DRB1
+                Average 15.3139 / 19.93504 / 30.0474 vs  /  /  [problems]
+                Low 11 / 15.8 / 25 vs  /  /  [problems]
+		
 
 			
