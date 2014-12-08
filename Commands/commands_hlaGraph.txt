@@ -439,3 +439,83 @@ Correct vs incorrect coverages per locus, 0.7 per position mapQ, 0 total mapQ
                 Average 15.3175 / 19.9365 / 30.0328 vs  /  /  [problems]
                 Low 11 / 15.8 / 25 vs  /  /  [problems]
                 Min 8 / 13 / 20 vs  /  /  [problems]
+				
+Before update to likelihoods:
+
+	T = 0.5
+	
+	Comparisons: 60 -- OK: 55
+
+	PER-LOCUS SUMMARY:
+			A: 7 of 10,     Accuracy 0.70   Call rate: 1.00
+			B: 9 of 10,     Accuracy 0.90   Call rate: 1.00
+			C: 9 of 10,     Accuracy 0.90   Call rate: 1.00
+			DQA1: 10 of 10, Accuracy 1.00   Call rate: 1.00
+			DQB1: 10 of 10, Accuracy 1.00   Call rate: 1.00
+			DRB1: 10 of 10, Accuracy 1.00   Call rate: 1.00
+
+	Correct vs incorrect coverages per locus:
+			A
+					Average 14.4104 / 15.28025 / 16.1501 vs 9.63247 / 13.18019 / 20.2006 [problems]
+					Low 10 / 10 / 10 vs 4 / 7 / 11 [problems]
+					Min 8 / 8.5 / 9 vs 3 / 5.66666666666667 / 9 [problems]
+			B
+					Average 11.8327 / 13.483525 / 15.0872 vs 10.5089 / 10.5089 /  [problems]
+					Low 5 / 7 / 10 vs 6 / 6 /  [problems]
+					Min 3 / 5 / 7 vs 4 / 4 /  [problems]
+			C
+					Average 7.21897 / 11.5922425 / 13.4793 vs 12.2862 / 12.2862 /  [problems]
+					Low 4 / 7.25 / 9 vs 6 / 6 /  [problems]
+					Min 2 / 4.25 / 6 vs 3 / 3 /  [problems]
+			DQA1
+					Average 35.1928 / 43.2008 / 52.9558 vs  /  /  [problems]
+					Low 26 / 35 / 45 vs  /  /  [problems]
+					Min 24 / 31.8 / 40 vs  /  /  [problems]
+			DQB1
+					Average 10.0519 / 15.00446 / 19.4 vs  /  /  [problems]
+					Low 7 / 11.6 / 16 vs  /  /  [problems]
+					Min 4 / 9.2 / 14 vs  /  /  [problems]
+			DRB1
+					Average 15.3175 / 19.9365 / 30.0328 vs  /  /  [problems]
+					Low 11 / 15.8 / 25 vs  /  /  [problems]
+					Min 8 / 13 / 20 vs  /  /  [problems]
+
+	T = 0.9
+	
+	Comparisons: 52 -- OK: 50
+
+	PER-LOCUS SUMMARY:
+			A: 6 of 7,      Accuracy 0.86   Call rate: 0.70
+			B: 8 of 9,      Accuracy 0.89   Call rate: 0.90
+			C: 6 of 6,      Accuracy 1.00   Call rate: 0.60
+			DQA1: 10 of 10, Accuracy 1.00   Call rate: 1.00
+			DQB1: 10 of 10, Accuracy 1.00   Call rate: 1.00
+			DRB1: 10 of 10, Accuracy 1.00   Call rate: 1.00
+
+	Correct vs incorrect coverages per locus:
+			A
+					Average 9.63247 / 12.4751175 / 16.1501 vs 20.2006 / 20.2006 /  [problems]
+					Low 4 / 7.5 / 10 vs 11 / 11 /  [problems]
+					Min 3 / 6.25 / 9 vs 9 / 9 /  [problems]
+			B
+					Average 11.8327 / 13.483525 / 15.0872 vs 10.5089 / 10.5089 /  [problems]
+					Low 5 / 7 / 10 vs 6 / 6 /  [problems]
+					Min 3 / 5 / 7 vs 4 / 4 /  [problems]
+			C
+					Average 7.21897 / 11.731034 / 13.4793 vs  /  /  [problems]
+					Low 4 / 7 / 9 vs  /  /  [problems]
+					Min 2 / 4 / 6 vs  /  /  [problems]
+			DQA1
+					Average 35.1928 / 43.2008 / 52.9558 vs  /  /  [problems]
+					Low 26 / 35 / 45 vs  /  /  [problems]
+					Min 24 / 31.8 / 40 vs  /  /  [problems]
+			DQB1
+					Average 10.0519 / 15.00446 / 19.4 vs  /  /  [problems]
+					Low 7 / 11.6 / 16 vs  /  /  [problems]
+					Min 4 / 9.2 / 14 vs  /  /  [problems]
+			DRB1
+					Average 15.3175 / 19.9365 / 30.0328 vs  /  /  [problems]
+					Low 11 / 15.8 / 25 vs  /  /  [problems]
+					Min 8 / 13 / 20 vs  /  /  [problems]
+
+					
