@@ -286,5 +286,264 @@ PER-LOCUS SUMMARY:
         DQA1: 10 of 10, Accuracy 1.00   Call rate: 1.00
         DQB1: 10 of 10, Accuracy 1.00   Call rate: 1.00
         DRB1: 10 of 10, Accuracy 1.00   Call rate: 1.00
+		
+Per-position mapping quality: [0.7]
 
+Comparisons: 60 -- OK: 55
+
+PER-LOCUS SUMMARY:
+        A: 7 of 10,     Accuracy 0.70   Call rate: 1.00
+        B: 9 of 10,     Accuracy 0.90   Call rate: 1.00
+        C: 9 of 10,     Accuracy 0.90   Call rate: 1.00
+        DQA1: 10 of 10, Accuracy 1.00   Call rate: 1.00
+        DQB1: 10 of 10, Accuracy 1.00   Call rate: 1.00
+        DRB1: 10 of 10, Accuracy 1.00   Call rate: 1.00
+
+Correct vs incorrect coverages per locus:
+        A
+                Average 14.3936 / 15.2772 / 16.1608 vs 9.67534 / 13.1842933333333 / 20.144 [problems]
+                Low 10 / 10 / 10 vs 4 / 7 / 11 [problems]
+                Min 8 / 8.5 / 9 vs 3 / 5.66666666666667 / 9 [problems]
+        B
+                Average 11.9858 / 13.52 / 15.0907 vs 10.4039 / 10.4039 /  [problems]
+                Low 5 / 7 / 10 vs 6 / 6 /  [problems]
+                Min 3 / 5 / 7 vs 4 / 4 /  [problems]
+        C
+                Average 7.21897 / 11.5211175 / 13.4672 vs 12.2828 / 12.2828 /  [problems]
+                Low 4 / 7.25 / 9 vs 6 / 6 /  [problems]
+                Min 2 / 4.25 / 6 vs 3 / 3 /  [problems]
+        DQA1
+                Average 35.1928 / 43.2 / 52.9558 vs  /  /  [problems]
+                Low 26 / 35 / 45 vs  /  /  [problems]
+                Min 24 / 31.8 / 40 vs  /  /  [problems]
+        DQB1
+                Average 10.0519 / 15.00298 / 19.4 vs  /  /  [problems]
+                Low 7 / 11.6 / 16 vs  /  /  [problems]
+                Min 4 / 9 / 14 vs  /  /  [problems]
+        DRB1
+                Average 15.3139 / 19.93504 / 30.0474 vs  /  /  [problems]
+                Low 11 / 15.8 / 25 vs  /  /  [problems]
+                Min 8 / 12.8 / 20 vs  /  /  [problems]
+
+With mismatch filter = 0.95
+
+Comparisons: 60 -- OK: 53
+
+PER-LOCUS SUMMARY:
+        A: 6 of 10,     Accuracy 0.60   Call rate: 1.00
+        B: 10 of 10,    Accuracy 1.00   Call rate: 1.00
+        C: 7 of 10,     Accuracy 0.70   Call rate: 1.00
+        DQA1: 10 of 10, Accuracy 1.00   Call rate: 1.00
+        DQB1: 10 of 10, Accuracy 1.00   Call rate: 1.00
+        DRB1: 10 of 10, Accuracy 1.00   Call rate: 1.00
+
+Correct vs incorrect coverages per locus:
+        A
+                Average 6.74426 / 9.62328 / 12.5023 vs 7.49923 / 11.4558433333333 / 15.4089 [problems]
+                Low 3 / 5 / 7 vs 4 / 7.66666666666667 / 10 [problems]
+                Min 3 / 4 / 5 vs 2 / 5 / 8 [problems]
+        B
+                Average 8.83096 / 11.109252 / 12.8505 vs  /  /  [problems]
+                Low 4 / 5.8 / 9 vs  /  /  [problems]
+                Min 1 / 3.6 / 6 vs  /  /  [problems]
+        C
+                Average 9.25345 / 10.64655 / 12.25 vs 5.1569 / 7.6388 / 10.1207 [problems]
+                Low 6 / 6.33333333333333 / 7 vs 3 / 4.5 / 6 [problems]
+                Min 3 / 3.66666666666667 / 4 vs 1 / 1.5 / 2 [problems]
+        DQA1
+                Average 34.747 / 42.3253 / 51.6145 vs  /  /  [problems]
+                Low 26 / 34.4 / 45 vs  /  /  [problems]
+                Min 24 / 31.4 / 40 vs  /  /  [problems]
+        DQB1
+                Average 9.08889 / 13.388138 / 18.4444 vs  /  /  [problems]
+                Low 6 / 9.6 / 14 vs  /  /  [problems]
+                Min 4 / 8 / 13 vs  /  /  [problems]
+        DRB1
+                Average 12.0547 / 17.00874 / 25.7591 vs  /  /  [problems]
+                Low 7 / 12.4 / 18 vs  /  /  [problems]
+                Min 6 / 10.6 / 16 vs  /  /  [problems]
+		
+
+Negative filtering with 0.3
+	A1	32MB
+	A2	26MB
+	A4	30MB
+	
+Manual filtering with negative preserve uniqueness:
+
+../bin/MHC-PRG domode filterReads --input_FASTQ ../tmp/hla/I1_AA02O9Q_A1/reads.p,../tmp/hla/I1_AA02O9Q_A2/reads.p,../tmp/hla/I1_AA02O9Q_A3/reads.p,../tmp/hla/I1_AA02O9Q_A4/reads.p,../tmp/hla/I1_AA02O9Q_A6/reads.p --negativeFilter ../tmp2/GS_nextGen/hla/derived/Homo_sapiens.GRCh37.60.dna.chromosome.ALL.blockedHLAgraph_k25.ctx --output_FASTQ ../tmp/hla/I1_AA02O9Q_A1/reads.p.n,../tmp/hla/I1_AA02O9Q_A2/reads.p.n,../tmp/hla/I1_AA02O9Q_A3/reads.p.n,../tmp/hla/I1_AA02O9Q_A4/reads.p.n,../tmp/hla/I1_AA02O9Q_A6/reads.p.n --uniqueness_base ../tmp2/GS_nextGen/hla/requiredkMers_graph.txt.kmers_25 --uniqueness_subtract ../tmp2/GS_nextGen/hla/derived/Homo_sapiens.GRCh37.60.dna.chromosome.ALL.blockedHLAgraph_k25.ctx
+
+This is new results from filtering with negative uniqueness:
+
+Correct vs incorrect coverages per locus:
+        A
+                Average 6.70444 / 9.60107 / 12.4977 vs 7.50077 / 11.48189 / 15.4686 [problems]
+                Low 3 / 5 / 7 vs 4 / 8 / 11 [problems]
+                Min 3 / 4 / 5 vs 2 / 5 / 8 [problems]
+        B
+                Average 8.93594 / 11.131688 / 12.8488 vs  /  /  [problems]
+                Low 4 / 5.8 / 9 vs  /  /  [problems]
+                Min 1 / 3.8 / 6 vs  /  /  [problems]
+        C
+                Average 9.25862 / 10.6505733333333 / 12.2603 vs 5.15862 / 7.64136 / 10.1241 [problems]
+                Low 6 / 6.33333333333333 / 7 vs 3 / 4.5 / 6 [problems]
+                Min 3 / 3.66666666666667 / 4 vs 1 / 1.5 / 2 [problems]
+        DQA1
+                Average 34.747 / 42.3253 / 51.6145 vs  /  /  [problems]
+                Low 26 / 34.4 / 45 vs  /  /  [problems]
+                Min 24 / 31.4 / 40 vs  /  /  [problems]
+        DQB1
+                Average 9.08889 / 13.391838 / 18.4444 vs  /  /  [problems]
+                Low 6 / 9.6 / 14 vs  /  /  [problems]
+                Min 4 / 8 / 13 vs  /  /  [problems]
+        DRB1
+                Average 12.0584 / 17.13576 / 25.7445 vs  /  /  [problems]
+                Low 7 / 12.6 / 18 vs  /  /  [problems]
+                Min 6 / 10.6 / 16 vs  /  /  [problems]
+
+No filtering by mismatches:
+
+Comparisons: 60 -- OK: 55
+
+PER-LOCUS SUMMARY:
+        A: 7 of 10,     Accuracy 0.70   Call rate: 1.00
+        B: 9 of 10,     Accuracy 0.90   Call rate: 1.00
+        C: 9 of 10,     Accuracy 0.90   Call rate: 1.00
+        DQA1: 10 of 10, Accuracy 1.00   Call rate: 1.00
+        DQB1: 10 of 10, Accuracy 1.00   Call rate: 1.00
+        DRB1: 10 of 10, Accuracy 1.00   Call rate: 1.00
+
+Correct vs incorrect coverages per locus, 0.7 per position mapQ, 0 total mapQ
+
+        A
+                Average 14.4104 / 15.28025 / 16.1501 vs 9.63247 / 13.18019 / 20.2006 [problems]
+                Low 10 / 10 / 10 vs 4 / 7 / 11 [problems]
+                Min 8 / 8.5 / 9 vs 3 / 5.66666666666667 / 9 [problems]
+        B
+                Average 11.8327 / 13.483525 / 15.0872 vs 10.5089 / 10.5089 /  [problems]
+                Low 5 / 7 / 10 vs 6 / 6 /  [problems]
+                Min 3 / 5 / 7 vs 4 / 4 /  [problems]
+        C
+                Average 7.21897 / 11.5922425 / 13.4793 vs 12.2862 / 12.2862 /  [problems]
+                Low 4 / 7.25 / 9 vs 6 / 6 /  [problems]
+                Min 2 / 4.25 / 6 vs 3 / 3 /  [problems]
+        DQA1
+                Average 35.1928 / 43.2008 / 52.9558 vs  /  /  [problems]
+                Low 26 / 35 / 45 vs  /  /  [problems]
+                Min 24 / 31.8 / 40 vs  /  /  [problems]
+        DQB1
+                Average 10.0519 / 15.00446 / 19.4 vs  /  /  [problems]
+                Low 7 / 11.6 / 16 vs  /  /  [problems]
+                Min 4 / 9.2 / 14 vs  /  /  [problems]
+        DRB1
+                Average 15.3175 / 19.9365 / 30.0328 vs  /  /  [problems]
+                Low 11 / 15.8 / 25 vs  /  /  [problems]
+                Min 8 / 13 / 20 vs  /  /  [problems]
+				
+Before update to likelihoods:
+
+	T = 0.5
+	
+	Comparisons: 60 -- OK: 55
+
+	PER-LOCUS SUMMARY:
+			A: 7 of 10,     Accuracy 0.70   Call rate: 1.00
+			B: 9 of 10,     Accuracy 0.90   Call rate: 1.00
+			C: 9 of 10,     Accuracy 0.90   Call rate: 1.00
+			DQA1: 10 of 10, Accuracy 1.00   Call rate: 1.00
+			DQB1: 10 of 10, Accuracy 1.00   Call rate: 1.00
+			DRB1: 10 of 10, Accuracy 1.00   Call rate: 1.00
+
+	Correct vs incorrect coverages per locus:
+			A
+					Average 14.4104 / 15.28025 / 16.1501 vs 9.63247 / 13.18019 / 20.2006 [problems]
+					Low 10 / 10 / 10 vs 4 / 7 / 11 [problems]
+					Min 8 / 8.5 / 9 vs 3 / 5.66666666666667 / 9 [problems]
+			B
+					Average 11.8327 / 13.483525 / 15.0872 vs 10.5089 / 10.5089 /  [problems]
+					Low 5 / 7 / 10 vs 6 / 6 /  [problems]
+					Min 3 / 5 / 7 vs 4 / 4 /  [problems]
+			C
+					Average 7.21897 / 11.5922425 / 13.4793 vs 12.2862 / 12.2862 /  [problems]
+					Low 4 / 7.25 / 9 vs 6 / 6 /  [problems]
+					Min 2 / 4.25 / 6 vs 3 / 3 /  [problems]
+			DQA1
+					Average 35.1928 / 43.2008 / 52.9558 vs  /  /  [problems]
+					Low 26 / 35 / 45 vs  /  /  [problems]
+					Min 24 / 31.8 / 40 vs  /  /  [problems]
+			DQB1
+					Average 10.0519 / 15.00446 / 19.4 vs  /  /  [problems]
+					Low 7 / 11.6 / 16 vs  /  /  [problems]
+					Min 4 / 9.2 / 14 vs  /  /  [problems]
+			DRB1
+					Average 15.3175 / 19.9365 / 30.0328 vs  /  /  [problems]
+					Low 11 / 15.8 / 25 vs  /  /  [problems]
+					Min 8 / 13 / 20 vs  /  /  [problems]
+
+	T = 0.9
+	
+	Comparisons: 52 -- OK: 50
+
+	PER-LOCUS SUMMARY:
+			A: 6 of 7,      Accuracy 0.86   Call rate: 0.70
+			B: 8 of 9,      Accuracy 0.89   Call rate: 0.90
+			C: 6 of 6,      Accuracy 1.00   Call rate: 0.60
+			DQA1: 10 of 10, Accuracy 1.00   Call rate: 1.00
+			DQB1: 10 of 10, Accuracy 1.00   Call rate: 1.00
+			DRB1: 10 of 10, Accuracy 1.00   Call rate: 1.00
+
+	Correct vs incorrect coverages per locus:
+			A
+					Average 9.63247 / 12.4751175 / 16.1501 vs 20.2006 / 20.2006 /  [problems]
+					Low 4 / 7.5 / 10 vs 11 / 11 /  [problems]
+					Min 3 / 6.25 / 9 vs 9 / 9 /  [problems]
+			B
+					Average 11.8327 / 13.483525 / 15.0872 vs 10.5089 / 10.5089 /  [problems]
+					Low 5 / 7 / 10 vs 6 / 6 /  [problems]
+					Min 3 / 5 / 7 vs 4 / 4 /  [problems]
+			C
+					Average 7.21897 / 11.731034 / 13.4793 vs  /  /  [problems]
+					Low 4 / 7 / 9 vs  /  /  [problems]
+					Min 2 / 4 / 6 vs  /  /  [problems]
+			DQA1
+					Average 35.1928 / 43.2008 / 52.9558 vs  /  /  [problems]
+					Low 26 / 35 / 45 vs  /  /  [problems]
+					Min 24 / 31.8 / 40 vs  /  /  [problems]
+			DQB1
+					Average 10.0519 / 15.00446 / 19.4 vs  /  /  [problems]
+					Low 7 / 11.6 / 16 vs  /  /  [problems]
+					Min 4 / 9.2 / 14 vs  /  /  [problems]
+			DRB1
+					Average 15.3175 / 19.9365 / 30.0328 vs  /  /  [problems]
+					Low 11 / 15.8 / 25 vs  /  /  [problems]
+					Min 8 / 13 / 20 vs  /  /  [problems]
+
+With most recent likelihood:
+
+	T = 0.0
+	
+	PER-LOCUS SUMMARY:
+			A: 7 of 10,     Accuracy 0.70   Call rate: 1.00
+			B: 9 of 10,     Accuracy 0.90   Call rate: 1.00
+			C: 9 of 10,     Accuracy 0.90   Call rate: 1.00
+			DQA1: 10 of 10, Accuracy 1.00   Call rate: 1.00
+			DQB1: 10 of 10, Accuracy 1.00   Call rate: 1.00
+			DRB1: 10 of 10, Accuracy 1.00   Call rate: 1.00
+	
+	T = 0.9
+	
+	Comparisons: 51 -- OK: 49
+
+	PER-LOCUS SUMMARY:
+			A: 6 of 7,      Accuracy 0.86   Call rate: 0.70
+			B: 8 of 9,      Accuracy 0.89   Call rate: 0.90
+			C: 5 of 5,      Accuracy 1.00   Call rate: 0.50
+			DQA1: 10 of 10, Accuracy 1.00   Call rate: 1.00
+			DQB1: 10 of 10, Accuracy 1.00   Call rate: 1.00
+			DRB1: 10 of 10, Accuracy 1.00   Call rate: 1.00
 			
+			
+Validate HapMap exomes:
+
+	./HLAtypeinference.pl --sampleIDs all_I2 --actions v --trueHLA /Net/fs1/home/dilthey/HapMap_Exomes_HLA_validation.txt
+	
