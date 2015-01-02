@@ -518,4 +518,32 @@ Before update to likelihoods:
 					Low 11 / 15.8 / 25 vs  /  /  [problems]
 					Min 8 / 13 / 20 vs  /  /  [problems]
 
-					
+With most recent likelihood:
+
+	T = 0.0
+	
+	PER-LOCUS SUMMARY:
+			A: 7 of 10,     Accuracy 0.70   Call rate: 1.00
+			B: 9 of 10,     Accuracy 0.90   Call rate: 1.00
+			C: 9 of 10,     Accuracy 0.90   Call rate: 1.00
+			DQA1: 10 of 10, Accuracy 1.00   Call rate: 1.00
+			DQB1: 10 of 10, Accuracy 1.00   Call rate: 1.00
+			DRB1: 10 of 10, Accuracy 1.00   Call rate: 1.00
+	
+	T = 0.9
+	
+	Comparisons: 51 -- OK: 49
+
+	PER-LOCUS SUMMARY:
+			A: 6 of 7,      Accuracy 0.86   Call rate: 0.70
+			B: 8 of 9,      Accuracy 0.89   Call rate: 0.90
+			C: 5 of 5,      Accuracy 1.00   Call rate: 0.50
+			DQA1: 10 of 10, Accuracy 1.00   Call rate: 1.00
+			DQB1: 10 of 10, Accuracy 1.00   Call rate: 1.00
+			DRB1: 10 of 10, Accuracy 1.00   Call rate: 1.00
+			
+			
+Validate HapMap exomes:
+
+	./HLAtypeinference.pl --sampleIDs all_I2 --actions v --trueHLA /Net/fs1/home/dilthey/HapMap_Exomes_HLA_validation.txt
+	
